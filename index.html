@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foreign Currency Exchange</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <header class="border text-white bg-primary">
+      <p class="text-center bg-warning">(000) 000-0000 | fce@imaginary.com</p>
+      <h1 class="p-3">F.C.E.</h1>
+    </header>
     <main>
       <section>
         <h1>Foreign Currency Exchange</h1>
@@ -21,35 +30,28 @@
         <img src="https://img.icons8.com/office/64/null/canada.png" />
         <p id="cad">Canadian Dollar: $1.00</p>
         <article>
-          <table>
+          <table class="table table-striped table-bordered w-auto">
             <tr>
               <th></th>
-              <th>From Currency</th>
-              <th>Abbreviation</th>
-              <th>To Canadian Dollar</th>
-              <th>Last Edit</th>
+              <th>Code</th>
+              <th>Sell</th>
+              <th>Buy</th>
             </tr>
             <tr>
               <th>
                 <img src="https://img.icons8.com/office/64/null/usa.png" />
               </th>
-              <td>United States Dollar</td>
               <td>USD</td>
-              <td id="rate-usd">1.30</td>
-              <td>
-                <p><time datetime="2023-03-08">2023-03-08</time></p>
-              </td>
+              <td id="buy-usd">1.30</td>
+              <td id="sell-usd">1.30</td>
             </tr>
             <tr>
               <th>
                 <img src="https://img.icons8.com/office/64/null/china.png" />
               </th>
-              <td>Chinese Yuan</td>
               <td>CNY</td>
-              <td id="rate-cny">5.05</td>
-              <td>
-                <p><time datetime="2023-03-08">2023-03-08</time></p>
-              </td>
+              <td id="buy-cny">5.05</td>
+              <td id="sell-usd">1.30</td>
             </tr>
             <tr>
               <th>
@@ -59,12 +61,9 @@
                   height="64"
                 />
               </th>
-              <td>Taiwanese New Dollar</td>
               <td>TWD</td>
-              <td id="rate-twd">22.33</td>
-              <td>
-                <p><time datetime="2023-03-08">2023-03-08</time></p>
-              </td>
+              <td id="buy-twd">22.33</td>
+              <td id="sell-usd">1.30</td>
             </tr>
             <tr>
               <th>
@@ -72,12 +71,9 @@
                   src="https://img.icons8.com/office/64/null/hongkong-flag.png"
                 />
               </th>
-              <td>Hong Kong Dollar</td>
-              <td id="rate-hkd">HKD</td>
+              <td id="buy-hkd">HKD</td>
+              <td id="sell-usd">1.30</td>
               <td>5.69</td>
-              <td>
-                <p><time datetime="2023-03-08">2023-03-08</time></p>
-              </td>
             </tr>
             <tr>
               <th>
@@ -87,23 +83,17 @@
                   height="64"
                 />
               </th>
-              <td>Macanese Pataca</td>
               <td>MOP</td>
-              <td id="rate-mop">5.86</td>
-              <td>
-                <p><time datetime="2023-03-08">2023-03-08</time></p>
-              </td>
+              <td id="buy-mop">5.86</td>
+              <td id="sell-usd">1.30</td>
             </tr>
             <tr>
               <th>
                 <img src="https://img.icons8.com/office/64/null/japan.png" />
               </th>
-              <td>Japanese Yen</td>
               <td>JPY</td>
-              <td id="rate-jpy">99.02</td>
-              <td>
-                <p><time datetime="2023-03-08">2023-03-08</time></p>
-              </td>
+              <td id="buy-jpy">99.02</td>
+              <td id="sell-jpy">1.30</td>
             </tr>
             <tr>
               <th>
@@ -111,12 +101,9 @@
                   src="https://img.icons8.com/office/64/null/india--v2.png"
                 />
               </th>
-              <td>Indian Rupee</td>
               <td>INR</td>
-              <td>59.41</td>
-              <td>
-                <p><time datetime="2023-03-08">2023-03-08</time></p>
-              </td>
+              <td id="buy-inr">INR</td>
+              <td id="sell-inr">59.41</td>
             </tr>
             <tr>
               <th>
@@ -124,12 +111,8 @@
                   src="https://img.icons8.com/office/64/null/south-korea.png"
                 />
               </th>
-              <td>South Korean Won</td>
               <td>KRW</td>
               <td>957.06</td>
-              <td>
-                <p><time datetime="2023-03-08">2023-03-08</time></p>
-              </td>
             </tr>
             <tr>
               <th>
@@ -137,23 +120,15 @@
                   src="https://img.icons8.com/office/64/null/indonesia--v1.png"
                 />
               </th>
-              <td>Indonesian Rupiah</td>
               <td>IDR</td>
               <td>11,192.29</td>
-              <td>
-                <p><time datetime="2023-03-08">2023-03-08</time></p>
-              </td>
             </tr>
             <tr>
               <th>
                 <img src="https://img.icons8.com/office/64/null/iran.png" />
               </th>
-              <td>Iranian Rial</td>
               <td>IRR</td>
               <td>30,683.20</td>
-              <td>
-                <p><time datetime="2023-03-08">2023-03-08</time></p>
-              </td>
             </tr>
           </table>
         </article>
@@ -186,5 +161,20 @@
       </div>
     </footer>
     <script src="./scripts/scripts.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
